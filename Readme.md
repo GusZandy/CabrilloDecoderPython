@@ -12,7 +12,7 @@ Make sure that you have created a Python-extension file and write like this:
 from cabrillo_decoder import decoder
 file = open("cq-ww-cw.cbr")
 
-decoder = decoder.CabrilloDecoder(file)
+cabrillo = decoder.Cabrillo(file)
 
-print(decoder.decode())
+print(cabrillo.decode())
 ```
