@@ -1,7 +1,6 @@
-
 from cabrillo_decoder import decoder
 file = open("cq-ww-cw.cbr")
+    
+cabrillo = decoder.Cabrillo(file)
 
-decoder = decoder.CabrilloDecoder(file)
-
-print(decoder.decode())
+print(cabrillo.decode())
